@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Wp küfür edene...",
+    "version": "13.0",
+    "description": "bak abicim o sözleri etme",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://web.whatsapp.com/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
