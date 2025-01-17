@@ -60,7 +60,7 @@ function SendMessageToLLM(MessageToPrompt) {
     fetch("https://api.together.xyz/v1/chat/completions", {
         method: "POST",
         headers: {
-            "Authorization": "Bearer ccd93826ae4f13fdcac046954bc08a4028dcacd9513b4b9d738dc94dd257321c",
+            "Authorization": "Bearer <api key>",
             "Content-Type": "application/json"
         },
         body: JSON.stringify(requestData)
